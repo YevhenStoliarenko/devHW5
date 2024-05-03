@@ -9,7 +9,7 @@ public class Main {
 
     }
 
-    public static int getFibonacciRecursion(int index){   // O(n2), не єфективний, якщо використовувати великий індекс.
+    public static int getFibonacciRecursion(int index){   // O(n2), не eфективний, якщо використовувати великий індекс.
         if (index == 0) {
             return 0;
         } else if (index == 1) {
@@ -20,8 +20,8 @@ public class Main {
 
     }
 
-    public static int getFibonacciIter(int index) {     // O(n), час сбільшується с разом с індексом,
-                                                        // єфективний по пам'яті, не зберігая проміжних результатів;
+    public static int getFibonacciIter(int index) {     // O(n), час сбільшується разом з індексом,
+                                                        // eфективний по пам'яті, не зберігає проміжних результатів;
         int n1, n2, n3;
         if (index == 1 || index == 2) {
             return 1;
@@ -44,7 +44,7 @@ public class Main {
 
 
     public static int getFibonacciDynamic(int index) {   // О(n), час прямо залежить від индексу
-        int result[] = new int[index];                     // займає більше пам'яті, так як використвуємо масив, і зберігаємо проміжні резултати;
+        int result[] = new int[index];                     // займає більше пам'яті, так як використовуємо масив і зберігаємо проміжні результати;
         int j = 1;
         if (index == 1) {
             return 1;
